@@ -310,7 +310,7 @@ async function starts() {
 				case 'gtts':	
 				case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'qual o idioma?', text, {quoted: mek})
-					const gtts = require('./pofbot/gtts')(args[0])
+					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'qual o texto?', text, {quoted: mek})
 					dtt = body.slice(9)
 					ranm = getRandom('.mp3')
@@ -339,7 +339,7 @@ async function starts() {
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/a/6x8epNa.jpg`)
+					buffer = await getBuffer(`https://imgur.com/a/6x8epNa`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*dono:* pacoca o famoso\n*numero:* wa.me/+5511954245328\n*insta:* @pacokakk\n\n\n*digite *bot* para ver comandos basicos para criar um bot'})
 					break
 				case 'belle2':
