@@ -310,7 +310,7 @@ async function starts() {
 				case 'gtts':	
 				case 'tts':
 					if (args.length < 1) return client.sendMessage(from, 'qual o idioma?', text, {quoted: mek})
-					const gtts = require('./A187ID/gtts')(args[0])
+					const gtts = require('./pofbot/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'qual o texto?', text, {quoted: mek})
 					dtt = body.slice(9)
 					ranm = getRandom('.mp3')
