@@ -209,7 +209,7 @@ async function starts() {
 								fs.unlinkSync(media)
 							})
 					} else {
-						reply('só uma foto')
+						reply('só funciona com fotos')
 					}
 					break
 				case 'stiker':
@@ -339,7 +339,7 @@ async function starts() {
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/a/6x8epNa,jpg`)
+					buffer = await getBuffer(`https://imgur.com/a/6x8epNa.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*dono:* pacoca o famoso\n*numero:* wa.me/+5511954245328\n*insta:* @pacokakk\n\n\n*digite *bot* para ver comandos basicos para criar um bot'})
 					break
 				case 'belle2':
